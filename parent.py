@@ -12,3 +12,4 @@ md.mult(10,4)
 print()
 print(dir(my_module))
 print()
+my_module.__name__
