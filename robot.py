@@ -30,11 +30,14 @@ class Robot:
 
 dihya = Robot("Dihya")
 aksil = Robot("AKsil")
-aksil = Robot("Sifaw")
+sifaw = Robot("Sifaw")
 
 dihya.say_hi()
 aksil.say_hi()
 Robot.how_many()
 print()
 aksil.die()
+dihya.die()
+sifaw.die()
 Robot.how_many()
+
