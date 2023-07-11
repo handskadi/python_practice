@@ -14,12 +14,12 @@ class Child(Base):
         return self.age
 
 class GrandChild(Child):
-    def __init__(self, name, age, address):
+    def __init__(self, name, age, job):
         Child.__init__(self, name, age)
-        self.address = address
+        self.job = job
 
-    def getAddress(self):
-        return self.address
+    def getJob(self):
+        return self.job
 
 g = GrandChild("KADI", 1988, "Software Engineer")
-print(g.getName(), g.getAge(), g.getAddress())
+print(g.getName(), g.getAge(), g.getJob())
