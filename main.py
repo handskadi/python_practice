@@ -1,15 +1,18 @@
-# this is a comment
-num1, num2 = input("Enter two numbers: ").split()
+#!/usr/bin/python3
+from module1 import sayHi, add
+count = 10
 
-num1 = int(num1)
-num2 = int(num2)
+sayHi("Mohamed")
+add(45,10)
 
-add = num1 + num2
-sub = num1 - num2
-mult = num1 * num2
-div = num1 / num2
-mod = num1 % num2
+def myd(a):
+    global count
+    count = count + 1
+    print(count+a)
+    return
 
-print(num1, "+",  num2, "=", add)
-print("{} - {} = {}".format(num1, num2, sub))
-print(f"{num1} * {num2} = {mult}")
+myd(10)
+# to Reload a module
+# import img
+# imp.reload(modulename)
+
