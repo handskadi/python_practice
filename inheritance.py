@@ -1,14 +1,24 @@
-""" Normal parent Class"""
+""" Inhertance"""
 
 class Person(object):
-    """ Constructor """
+    """ Prent class """
     def __init__(self, name, id):
+        """ Constructor """
         self.name = name
         self.id = id
-    """ To check if this person is an employee """
     def Display(self):
+        """ To check if this person is an employee """
         print(self.name, self.id)
 
-"""Driver code"""
-emp = Person("Mohamed", 1988)
-emp.Display()
+
+class Emp(Person):
+    """child class"""
+    def Print(self):
+        print("Emp class called")
+
+
+"""Excutable code"""
+emp_detail = Emp("KADI", 1988)
+emp_detail.Display()
+emp_detail.Print()
+
