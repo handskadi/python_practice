@@ -7,17 +7,18 @@ class Person():
         print(self.name, self.age)
 
 class Student(Person):
-    def __init__(self, name, age):
+    def __init__(self, name, age, dob):
         self.sName = name
         self.sAge = age
+        self.dob = dob
 
         #inherting the properties of parent class
         super().__init__("Zizo", age)
 
     def displayInfo(self):
-        print(self.sName, self.sAge)
+        print(self.sName, self.sAge, self.dob)
 
 
-obj = Student("KADI", 35)
+obj = Student("KADI", 35, "08-04-1988")
 obj.display()
 obj.displayInfo()
